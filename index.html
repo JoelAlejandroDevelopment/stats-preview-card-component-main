@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
@@ -12,14 +16,38 @@
 </head>
 <body>
 
-  Get insights that help your business grow.
+  <section class="card">
+    <header class="header-img">
+      <img src="images/image-header-mobile.jpg" alt="">
+    </header>
+    <main class="main">
+      <h2 class="text-white title-2">
+        Get <strong>insights</strong> that help your business grow.
+      </h2>
+      <p class="text-transparent-1 paragraph">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+      </p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <div class="dates-container">
+        <div class="dates-1">
+          <h2 class="text-white title-2">10K+</h2>
+          <p class="text-transparent-2 paragraph"> COMPANIES</p>
+        </div>
+        
+        <div class="dates">
+          <h2 class="text-white title-2">314</h2>
+          <p class="text-transparent-2 paragraph">TEMPLATES</p>
+        </div>
+        
+        <div class="dates">
+          <h2 class="text-white title-2">12M+</h2>
+          <p class="text-transparent-2 paragraph">QUERIES</p>
+        </div>
+      </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+    </main>
+  </section>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
