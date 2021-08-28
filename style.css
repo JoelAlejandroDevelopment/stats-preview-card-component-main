@@ -20,19 +20,29 @@ body
 {
   background-color: hsl(244, 38%, 16%);
   width: 80vw;
-
+  
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
   margin-top: 50px;
   border-radius: 10px;
   margin-bottom: 40px;
+  
+  display: grid;
+}
+
+.header-img
+{
+  background-color: hsl(277, 64%, 61%);
+  border-radius: 10px 10px 0 0;
 }
 
 img
 {
+  height: 100%;
   width: 100%;
   border-radius: 10px 10px 0 0;
+  mix-blend-mode: multiply;
 }
 
 .main
@@ -51,10 +61,55 @@ strong
   font-weight: 700;
 }
 
+@media screen and (min-width: 800px) {
+  .title-2.main-title
+  {
+    font-size: 30px;
+  }
+}
+
 .dates-container
 {
   display: grid;
-  grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+@media screen and (max-width: 480px) {
+  .dates-container
+  {
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .dates-container
+  {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+
+  .card
+  {
+    grid-template-columns: 50% 50%;
+  }
+
+  .header-img
+  {
+    border-radius: 0 10px 10px 0;
+  }
+  img
+  {
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .item-card.main
+  {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
 }
 
 .paragraph
@@ -75,7 +130,16 @@ strong
   text-align: center;
 }
 
+@media screen and (min-width: 800px){
+  .paragraph,
+  .title-2
+  {
+    text-align: left;
+  }
+}
+
 /* -------------------------------
  */
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(277, 64%, 61%); }
+.attribution a { color: hsl(277, 64%, 61%); text-decoration: none;}
+.attribution a:hover { color: hsl(277, 64%, 61%); text-shadow: 0 0 10px hsl(277, 64%, 61%); text-decoration: none;}
